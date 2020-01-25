@@ -16,3 +16,30 @@ const numberTextStyle = TextStyle(
   fontSize: 40.0,
   fontWeight: FontWeight.w900,
 );
+
+const largeButtonTextStyle = TextStyle(
+  fontSize: 24.0,
+  fontWeight: FontWeight.bold,
+  letterSpacing: 1.0,
+);
+
+const titleTextStyle = TextStyle(
+  fontSize: 36.0,
+  fontWeight: FontWeight.bold,
+);
+
+const resultTextStyle = TextStyle(
+  fontSize: 18.0,
+  fontWeight: FontWeight.bold,
+  color: Color(0xFF24D876),
+  letterSpacing: 1.0,
+);
+
+const bmiTextStyle = TextStyle(
+  fontSize: 80.0,
+  fontWeight: FontWeight.bold,
+);
+
+const bodyTextStyle = TextStyle(
+  fontSize: 20.0,
+);

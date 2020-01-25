@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class ReusableCard extends StatelessWidget {
   ReusableCard(
       {@required this.colour,
-      this.cardChild, 
+      this.cardChild,
       this.onPress}); //to make property required add the @reuired annotation
 
   final Color colour; // final makes this property immutable
@@ -14,7 +14,7 @@ class ReusableCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: onPress,
-          child: Container(
+      child: Container(
         child: cardChild,
         margin: EdgeInsets.all(15.0),
         decoration: BoxDecoration(
@@ -22,31 +22,6 @@ class ReusableCard extends StatelessWidget {
           color: colour,
         ),
       ),
-    );
-  }
-}
-
-class RoundIconButton extends StatelessWidget {
-  RoundIconButton({
-    this.icon,
-    this.onPressed,
-  });
-
-  final IconData icon;
-  final onPressed;
-
-  @override
-  Widget build(BuildContext context) {
-    return RawMaterialButton(
-      child: Icon(icon),
-      onPressed: onPressed,
-      shape: CircleBorder(),
-      elevation: 6.0,
-      constraints: BoxConstraints.tightFor(
-        width: 56.0,
-        height: 56.0,
-      ),
-      fillColor: Color(0xFF4C4F5E),
     );
   }
 }
